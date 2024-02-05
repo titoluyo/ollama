@@ -4,7 +4,7 @@ services:
     image: ollama/ollama:latest
     restart: always
     volumes:
-      - $PWD/models:/root/.ollama
+      - $PWD/ollama:/root/.ollama
   ollama-webui:
     build:
       context: ./webui/
